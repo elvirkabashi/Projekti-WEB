@@ -113,7 +113,7 @@ span{
     color: rgb(47, 47, 47);
 }
 .h div{
-    background: url("img/debt.jpg");
+    background: url("imgSport/france.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -151,6 +151,45 @@ span{
     color: #e03030;
 }
 
+.color{
+    background-color: rgb(22, 21, 21);
+}
+
+.home-color{
+    background-color: rgb(22, 21, 21);
+    margin-left: 0;
+    max-width: 100%;
+}
+#black{
+    padding-top: 15px;
+}
+.hom p{
+    color: white;
+    
+}
+.hom .color .world-color p{
+    background-color: rgb(74, 74, 74);
+}
+.hom .color .world-color h2{
+    color: white;
+}
+.hom .color .world-color h2:hover{
+    color: #e03030;
+}
+.hom hr{
+    background-color: #e03030;
+    margin-top: 1px
+}
+
+.world-color{
+    background-color: ;
+}
+
+
+
+
+
+
 
 @media screen and (max-width:1320px){
     .home{
@@ -158,7 +197,13 @@ span{
         margin-top: 60px;
         max-width: 1100px;
     }
+    .home-color{
+        background-color: black;
+        margin-left: 0;
+        max-width: 100%;
+    }
 }
+
 
 @media screen and (max-width:1220px){
     .home{
@@ -166,12 +211,22 @@ span{
         margin-top: 60px;
         max-width: 1100px;
     }
+    .home-color{
+        background-color: black;
+        margin-left: 0;
+        max-width: 100%;
+    }
 } 
 
 @media screen and (max-width:1145px){
     .home{
         margin-top: 60px;
         max-width: 1000px;
+    }
+    .home-color{
+        background-color: black;
+        margin-left: 0;
+        max-width: 100%;
     }
 }
 
@@ -191,6 +246,11 @@ span{
         height: 250px;
         margin: 0;
     }
+    .home-color{
+        background-color: black;
+        margin-left: 0;
+        max-width: 100%;
+    }
 }
 
 @media screen and (max-width:776px){
@@ -209,6 +269,11 @@ span{
         height: 350px;
         margin: 0;
     }
+    .home-color{
+        background-color: black;
+        margin-left: 0;
+        max-width: 100%;
+    }
 }
 
 @media screen and (max-width:570px){
@@ -223,6 +288,11 @@ span{
         width: 100%;
         height: 250px;
         margin: 0;
+    }
+    .home-color{
+        background-color: black;
+        margin-left: 0;
+        max-width: 100%;
     }
 }
 
@@ -244,5 +314,10 @@ span{
         width: 100%;
         height: 150px;
         margin: 0;
+    }
+    .home-color{
+        background-color: black;
+        margin-left: 0;
+        max-width: 100%;
     }
 }
