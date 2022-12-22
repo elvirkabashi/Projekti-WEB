@@ -9,6 +9,9 @@ ul,li,a,img {
     text-decoration: none;
     display: inline;
 }
+a{
+    color: white;
+}
 li{
     padding: 19px;
     font-size: 15px;
@@ -73,6 +76,7 @@ hr{
     height: 3px;
     border: none;
     background-color: rgb(46, 46, 46);
+    margin-top: 1px
 }
 .home .h div h1{
     background-color:white;
@@ -146,7 +150,6 @@ span{
 .world h2:hover{
     color: #e03030;
 }
-
 
 
 @media screen and (max-width:1320px){
