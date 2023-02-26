@@ -1,3 +1,10 @@
+<?php
+    include '../modeli.php';
+    session_start();
+    if(!isset($_SESSION['ID'])){
+        header("location: ../Login form/loginAdmin.php");
+    }
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,34 +17,43 @@
 </head>
 <body>
 <header>
-        
-        <div class="logo">
-            <div class="nav-rez">
-            <span class="bar"></span>
-            <span class="bar"></span>
-            <span class="bar"></span>
-        </div>
 
-            <a href="index.php"><img src="img/logo.png" alt=""></a>
-        <div class="nleft">
-            
-            <ul  class="nav-menu">
-                <li class="nav-item"><a href="index.php"><span>World</span></a></li></a>
-                <li class="nav-item"><a href="news.php">News</a></li>
-                <li class="nav-item"><a href="sport.php">Sport</a></li>
-            </ul>
-        </div>
-        </div>
-        <div class="nright">
-            <ul>
-                <li><a href="index.php">About Us</a></li>
-                <li><a href="index.php">Contact Us</a></li>  
-            </ul>
-            <button><a href="./Login form/login.html">Log In</a></button>
-        </div>
-        </header>
+<div class="logo">
+    <div class="nav-rez">
+    <span class="bar"></span>
+    <span class="bar"></span>
+    <span class="bar"></span>
+</div>
+
+    <a href="index.php"><img src="img/logo.png" alt=""></a>
+<div class="nleft">
+    
+    <ul  class="nav-menu">
+            <li class="nav-item"><a href="user.php">Users</a></li></a>
+            <li class="nav-item"><a href="newsposted.php">News</a></li>
+            <li class="nav-item"><a href="readcontact.php">Contact</a></li>
+            <li class="nav-item"><a href="aboutus.php">About Us</a></li>
+    </ul>
+</div>
+</div>
+<div class="nright">
+
+
+<?php
+            if(isset($_SESSION['ID'])){?>
+            <b>Admin: </b>
+                <b><?php echo $_SESSION['name']; ?> </b>
+                <b><?php echo $_SESSION['surname']; ?> </b>
+            <?php 
+                echo '<button><a href="../Login form/logoutUser.php">Log out</a></button>';
+            }
+        ?>
+
+
+</div>
+</header>
     <?php
-        include 'modeli.php';
+
         $id = $_GET['id'];
         $model = new Model();
         $rows = $model->fetchByID($id);
@@ -65,6 +81,6 @@
     }
         ?>
 
-<script src="script/script.js"></script>
+<script src="script/navScript.js"></script>
 </body>
 </html>

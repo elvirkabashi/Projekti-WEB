@@ -1,6 +1,9 @@
 <?php
+    include '../modeli.php';
     session_start();
-    include 'modeli.php';
+    if(!isset($_SESSION['ID'])){
+        header("location: ../Login form/loginAdmin.php");
+    }
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -9,7 +12,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="img/logo.png" type="image/icon type">
-    <link rel="stylesheet" href="css/aboutus.css">
+    <link rel="stylesheet" href="../css/aboutus.css">
     <title>CNN|About US</title>
 </head>
 <body>
@@ -26,25 +29,26 @@
     <div class="nleft">
         
     <ul  class="nav-menu">
-        <li class="nav-item"><a href="index.php">World</a></li></a>
-        <li class="nav-item"><a href="news.php">News</a></li>
-        <li class="nav-item"><a href="sport.php">Sport</a></li>
+    <ul  class="nav-menu">
+            <li class="nav-item"><a href="user.php">Users</a></li></a>
+            <li class="nav-item"><a href="newsposted.php">News</a></li>
+            <li class="nav-item"><a href="readcontact.php">Contact</a></li>
+            <li class="nav-item"><a href="aboutus.php">About Us</a></li>
+        </ul>
     </ul>
     </div>
     </div>
     <div class="nright">
         <ul>
-            <a href="aboutus.php"></a><li><span>About Us</span></li></a>
-            <a href="contact.php"><li>Contact Us</li></a>
-            <li><?php if(isset($_SESSION['email'])){
-                        echo $_SESSION['email'];
-                        echo '<a href="./Login form/logoutUser.php"><button style="margin-left:5px;">Log out</button></a>';
-                    }else{ ?> </li>
-                </ul>
-                <?php 
-                   echo '<a href="./Login form/login.php"><button>Log In</button></a>'; 
-                    }
-                ?>
+        <?php
+            if(isset($_SESSION['ID'])){?>
+            <b>Admin: </b>
+                <b><?php echo $_SESSION['name']; ?> </b>
+                <b><?php echo $_SESSION['surname']; ?> </b>
+            <?php 
+                echo '<button><a href="../Login form/logoutUser.php">Log out</a></button>';
+            }
+        ?>
     </div>
 </header>
 <?php
@@ -57,14 +61,15 @@
 <main>
     <section class="about-us">
         <h1>About Us</h1>
+        <a href="editAboutus.php?id=<?php echo $row['ID']; ?>"><button>Edit</button></a>
         <p><?php echo $row['info']; ?></p>
-        <img src="img/<?php echo $row['photo'] ?>" alt="CNN team photo">
+        <img src="../img/<?php echo $row['photo'] ?>" alt="CNN team photo">
     </section>
 </main>
 <?php
             }
         }
 ?>
-<script src="script/script.js"></script>
+<script src="script/scriptnav.js"></script>
 </body>
 </html>
