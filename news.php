@@ -54,7 +54,7 @@
     <div class="contanier">
         <div class="right">
             <h1>US to send Patriot missile defense system to Ukraine</h1>
-            <img src="imgNews/ukraine.jpg" alt="">
+            <img src="img/ukraine.jpg" alt="">
             <h3>The Biden administration is completing plans to send the system to Ukraine and announce it as soon as this week, US officials say</h3>
         </div>
         <?php
