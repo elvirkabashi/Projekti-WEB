@@ -1,0 +1,373 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+ul,li,a,img {
+    text-decoration: none;
+    display: inline;
+}
+a{
+    color: white;
+}
+li{
+    padding: 19px;
+    font-size: 15px;
+    cursor: pointer;
+}
+header{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 160px;
+    background-color: black;
+    color: aliceblue;
+    height: 42px;
+    z-index: 1;
+}
+.logo{
+    display: flex;
+    align-items: center;
+}
+.logo img{
+    width: 43px;
+    height: 43px;
+}
+
+.nright button{
+    background-color: black;
+    color:white;
+    border: 1px solid white;
+    min-height: 27px;
+    min-width: 60px;
+    font-weight: bolder;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+li a:hover{
+    color: rgb(221, 221, 221);
+}
+.nright button:hover{
+    background-color:rgb(59, 59, 59);
+}
+button a{
+    color: white;
+}
+
+
+
+.home{
+    margin-left: 200px;
+    margin-top: 70px;
+    max-width: 1100px;
+}
+.home h1{
+    font-size: 60px;
+    font-weight: 300;
+    position: relative;
+}
+hr{
+    height: 3px;
+    border: none;
+    background-color: rgb(46, 46, 46);
+    margin-top: 1px
+}
+.home .h div h1{
+    background-color:white;
+    min-width: 740px;
+    opacity: 0.9; 
+}
+.home .h h1{
+    max-width: 740px;
+    font-size: 33px;
+    font-weight: 300;
+    padding: 10px;
+    color: rgb(46, 46, 46);
+}
+.home .h h1:hover{
+    color: #e03030;
+}
+span{
+    color: #e03030;
+    font-weight: 600;  
+}
+.home .around{
+    
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.home p{
+    margin-top: 40px;
+    font-weight: 300;
+    font-size: 25px;
+    color: rgb(47, 47, 47);
+}
+.h div{
+    background: url("../img/france.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 740px;
+    height: 450px;
+    position: relative;
+}
+.h div h1{
+    position: absolute;
+    bottom: 0;
+}
+.world{ 
+
+    flex-basis: 356px;
+    flex-grow: 1;
+    height: auto;
+    margin: 5px;
+}
+
+.world img{
+    width: 100%;
+    height: 220px;
+    margin: 0;
+}
+.world p{
+    display:inline-block;
+    background-color: rgb(240, 240, 240);
+    width: 100%;
+    padding: 7px;
+    margin: 0;
+    font-weight: bold;
+    font-size: 19px;
+}
+.world h2:hover{
+    color: #e03030;
+}
+
+.color{
+    background-color: rgb(22, 21, 21);
+}
+
+.home-color{
+    background-color: rgb(22, 21, 21);
+    margin-left: 0;
+    max-width: 100%;
+}
+#black{
+    padding-top: 15px;
+}
+.hom p{
+    color: white;
+    
+}
+.hom .color .world-color p{
+    background-color: rgb(74, 74, 74);
+}
+.hom .color .world-color h2{
+    color: white;
+}
+.hom .color .world-color h2:hover{
+    color: #e03030;
+}
+.hom hr{
+    background-color: #e03030;
+    margin-top: 1px
+}
+
+
+
+.nav-rez{
+    display: none;
+    cursor: pointer;
+}
+
+.bar{
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    background-color: white;
+}
+
+
+
+@media screen and (max-width:1320px){
+    .home{
+        margin-left: 100px;
+        margin-top: 60px;
+        max-width: 1100px;
+    }
+    .home-color{
+        background-color: black;
+        margin-left: 0;
+        max-width: 100%;
+    }
+}
+
+
+@media screen and (max-width:1220px){
+    header{
+        padding: 0px 10px;
+    }
+    .home{
+        margin-left: 30px;
+        margin-top: 60px;
+        max-width: 1100px;
+    }
+    .home-color{
+        background-color: black;
+        margin-left: 0;
+        max-width: 100%;
+    }
+} 
+
+@media screen and (max-width:1145px){
+    .home{
+        margin-top: 60px;
+        max-width: 1000px;
+    }
+    .home-color{
+        background-color: black;
+        margin-left: 0;
+        max-width: 100%;
+    }
+}
+
+@media screen and (max-width:977px){
+    .h div{
+        width: 700px;
+        height: 400px;
+    }
+    .world{ 
+        width: 360px;
+        height: auto;
+        margin: 5px;
+    }
+    
+    .world img{
+        width: 100%;
+        height: 250px;
+        margin: 0;
+    }
+    .home-color{
+        background-color: black;
+        margin-left: 0;
+        max-width: 100%;
+    }
+}
+
+@media screen and (max-width:776px){
+    .nav-rez{
+        display: block;
+        padding-right: 7px;
+      }
+    
+      .nav-rez.active .bar:nth-child(2){
+        opacity: 0;
+      }
+      .nav-rez.active .bar:nth-child(1){
+        transform: translateY(8px) rotate(45deg);
+      }
+      .nav-rez.active .bar:nth-child(3){
+        transform: translateY(-8px) rotate(-45deg);
+      }
+
+      .nav-menu{
+        position: fixed;
+        left: -100%;
+        top: 41px;
+        gap: 0;
+        display: flex;
+        flex-direction: column;
+        background-color: #262626;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        transition: 0.3s;
+      }
+    
+      .nav-item{
+        font-size: 17px;
+        margin: 10px 0;
+      }
+    
+      .nav-menu.active{
+        left: 0;
+      }
+
+    .h div{
+        width: 570px;
+        height: 290px;
+    }
+    .home .h h1{
+        font-size: 24px;
+    }
+    .home h1{
+        font-size: 40px;
+    }
+    .world img{
+        width: 100%;
+        height: 350px;
+        margin: 0;
+    }
+    .home-color{
+        background-color: black;
+        margin-left: 0;
+        max-width: 100%;
+    }
+}
+
+@media screen and (max-width:570px){
+    .h div{
+        width: 400px;
+        height: 200px;
+    }
+    .home .h h1{
+        font-size: 16px;
+    }
+    .world img{
+        width: 100%;
+        height: 250px;
+        margin: 0;
+    }
+    .home-color{
+        background-color: black;
+        margin-left: 0;
+        max-width: 100%;
+    }
+}
+
+@media screen and (max-width:370px){
+    .home{
+        margin-left: 2px;
+    }
+    .h div{
+        width: 300px;
+        height: 150px;
+    }
+    .home h1{
+        font-size: 30px;
+    }
+    .home .h h1{
+        font-size: 12px;
+    }
+    .world img{
+        width: 100%;
+        height: 150px;
+        margin: 0;
+    }
+    .home-color{
+        background-color: black;
+        margin-left: 0;
+        max-width: 100%;
+    }
+}
