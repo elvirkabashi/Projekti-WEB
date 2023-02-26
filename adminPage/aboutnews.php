@@ -12,7 +12,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/about.css">
-    <link rel="icon" href="img/logo.png" type="image/icon type">
+    <link rel="icon" href="../img/logo.png" type="image/icon type">
     <title>CNN|</title>
 </head>
 <body>
@@ -25,7 +25,7 @@
     <span class="bar"></span>
 </div>
 
-    <a href="index.php"><img src="img/logo.png" alt=""></a>
+    <a href="index.php"><img src="../img/logo.png" alt=""></a>
 <div class="nleft">
     
     <ul  class="nav-menu">
@@ -72,7 +72,7 @@
         <h1><?php echo $row['title']; ?></h1><br><br>
         <p>By <b><?php echo $postedby[0]['name'];?> <?php echo $postedby[0]['surname'];?></b>, CNN <br>
             Published <?php echo $time ?>, <?php echo $date ?></p><br>
-        <img src="img/<?php echo $row['photo']; ?>" alt=""><br><br><br>
+        <img src="../img/<?php echo $row['photo']; ?>" alt=""><br><br><br>
 
         <p id="about"><?php echo $row['about'] ?></p>
     </div>

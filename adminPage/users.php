@@ -221,7 +221,7 @@ table {
     <span class="bar"></span>
 </div>
 
-    <a href="index.php"><img src="img/logo.png" alt=""></a>
+    <a href="index.php"><img src="../img/logo.png" alt=""></a>
 <div class="nleft">
     
     <ul  class="nav-menu">

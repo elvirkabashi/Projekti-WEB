@@ -12,7 +12,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Edit</title>
-    <link rel="icon" href="img/logo.png" type="image/icon type">
+    <link rel="icon" href="../img/logo.png" type="image/icon type">
     <link rel="stylesheet" href="css/addnewss.css">
 </head>
 <body>
@@ -26,7 +26,7 @@
         <span class="bar"></span>
     </div>
 
-        <a href="index.php"><img src="img/logo.png" alt=""></a>
+        <a href="index.php"><img src="../img/logo.png" alt=""></a>
     <div class="nleft">
         
         <ul  class="nav-menu">
@@ -110,7 +110,7 @@
         <label>Chapter:</label>
         <input type="text" name="chapter" value="<?php echo $row['chapter']; ?>"><br><br>
         <label>Photo:</label>
-        <input type="file" name="photo" ><img src="img/<?php echo $row['photo']; ?>" style="width: 100px; height:70px;"><br><br>
+        <input type="file" name="photo" ><img src="../img/<?php echo $row['photo']; ?>" style="width: 100px; height:70px;"><br><br>
         <label>Title:</label>
         <input type="text" name="title" value="<?php echo $row['title']; ?>"><br><br>
         <textarea cols="30" rows="10" placeholder="more about the news.." name="about" maxlength="1500"><?php echo $row['about']; ?></textarea><br><br>

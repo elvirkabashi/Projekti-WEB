@@ -12,7 +12,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Insert</title>
-    <link rel="icon" href="img/logo.png" type="image/icon type">
+    <link rel="icon" href="../img/logo.png" type="image/icon type">
     <link rel="stylesheet" href="css/addnewss.css">
 </head>
 <body>
@@ -26,7 +26,7 @@
         <span class="bar"></span>
     </div>
 
-        <a href="index.php"><img src="img/logo.png" alt=""></a>
+        <a href="index.php"><img src="../img/logo.png" alt=""></a>
     <div class="nleft">
         
         <ul  class="nav-menu">

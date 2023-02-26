@@ -9,7 +9,7 @@
 <html>
   <head>
     <title>Mesazhet</title>
-    <link rel="icon" href="img/logo.png" type="image/icon type">
+    <link rel="icon" href="../img/logo.png" type="image/icon type">
     <style>
       *{
     margin: 0;
@@ -192,7 +192,7 @@ button a{
         <span class="bar"></span>
     </div>
 
-        <a href="index.php"><img src="img/logo.png" alt=""></a>
+        <a href="index.php"><img src="../img/logo.png" alt=""></a>
     <div class="nleft">
         
         <ul  class="nav-menu">
